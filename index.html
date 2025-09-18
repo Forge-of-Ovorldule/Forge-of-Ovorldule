@@ -1,25 +1,47 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<title>Forge of Ovorldule</title>
-	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Forge of Ovorldule</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<div class="intro">
-		<div class="circle" aria-hidden="true"></div>
+  <header class="hero">
+    <div class="hero-circle" aria-hidden="true">
+      <div class="hero-overlay"></div>
+      <p class="hero-subtitle">Forge of</p>
+      <h1 class="hero-title">Ovorldule</h1>
+    </div>
+  </header>
 
-		<div class="subtitle">Forge of</div>
+  <main>
+    <section class="about">
+      <div class="about-left">
+        <h2 class="about-title">Forge of Ovorldule</h2>
+        <p id="org-desc" class="about-desc">Загрузка описания организации...</p>
+      </div>
+      <div class="about-image">
+        <img src="https://private-user-images.githubusercontent.com/203453042/469810851-81c0f929-9a20-4657-b90b-4dcf2f492e89.png" alt="Forge image" />
+      </div>
+    </section>
 
-		<h1 class="title" data-text="Ovorldule">Ovorldule</h1>
-		<script src="animateTitle.js"></script>
+    <section class="search">
+      <div class="search-box">
+        <input id="search" placeholder="Manage projects..." aria-label="search repos">
+        <button id="search-btn" aria-label="search arrow">→</button>
+      </div>
+    </section>
 
-		<img class="logo" src="res/img/forge_of_ovorldule.png" alt="Forge of Ovorldule">
-	</div>
+    <section class="repos" aria-label="repositories">
+      <div class="marquee" id="marquee">
+        <div class="marquee-track" id="marquee-track"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
